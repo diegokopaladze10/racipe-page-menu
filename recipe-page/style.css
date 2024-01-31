@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+}
+/* .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+ul li::before{
+    content: "•";
+    color: var(--Dark-Raspberry);
+    font-weight: 600;
+    margin-right: 18px;
+}
+.recipe-img{
+    margin-bottom: 25px;
+}
+.container{
+    width: 850px;
+    background-color: var(--White);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 12px;
+}
+.container img{
+    width: 100%;
+    border-radius: 7px;
+}
+h1{
+    font-weight: 400;
+    font-family: 'Young Serif', 'Outfit', sans-serif;
+    margin-bottom: 20px;
+}
+.container .discription{
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--Wenge-Brown);
+    margin-bottom: 25px;
+}
+.time-box{
+    width: 100%;
+    background-color: var(--Rose-White);
+    font-family: 'Outfit', sans-serif;
+    border-radius: 7px;
+    padding: 18px;
+    margin-bottom: 25px;
+}
+.time-box h3{
+    color: var(--Dark-Raspberry);
+    margin-bottom: 10px;
+}
+.time-box li{
+    margin-bottom: 10px;
+}
+.time-box span{
+    font-weight: 600;
+    color: var(--Dark-Charcoal);
+}
+.ingredients{
+    border-bottom: 1px solid var(--Light-Grey);
+    margin-bottom: 25px;
+}
+h2{
+    font-family: 'Young Serif', 'Outfit', sans-serif;
+    color: var(--Nutmeg);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.ingredients ul li{
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--Wenge-Brown);
+    margin-bottom: 10px;
+}
+.ingredients ul li:last-child{
+    margin-bottom: 30px;
+}
+.instructions{
+    border-bottom: 1px solid var(--Light-Grey);
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+}
+.instructions .item span{
+    font-weight: 600;
+}
+.instructions .item{
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+}
+.instructions .item .num{
+    color: var(--Nutmeg);
+    margin-right: 1rem;
+    font-weight: 700;
+}
+.Enjoy{
+    margin-bottom: 25px;
+}
+.nutrition{
+    font-family: 'Outfit', sans-serif;
+}
+.nutrition p{
+    color: var(--Wenge-Brown);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.nutrition .litl-ingr{
+    color: var(--Wenge-Brown);
+    font-size: 16px;
+}
+.line{
+    border-bottom: 1px solid var(--Light-Grey);
+    margin-bottom: 9px;
+}
+.ingredients2{
+    width: 100%;
+    padding-right: 240px;
+    padding-left: 40px;
+}
+.calories{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+.carbs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+.protein{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+.fat{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+.weigths{
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
